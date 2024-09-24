@@ -11,7 +11,7 @@ tinymce.init({
   plugins: "code block-accordion-plugin preview",
   toolbar: "block-accordion-plugin preview",
   extended_valid_elements:
-    "svg[*],g[*],path[*],circle[*],rect[*],polygon[*],script", // 允许 SVG 标签及其属性
+    "svg[*],g[*],path[*],circle[*],rect[*],polygon[*],script,style", // 允许 SVG 标签及其属性
 
   content_style: `
     .accordion-container.expanded > .accordion-title {
@@ -45,6 +45,7 @@ tinymce.init({
         line-height: 1.5;
         color: #393c41;
       }
+
       .accordion-content {
         margin: 0;
         max-height: 0;
